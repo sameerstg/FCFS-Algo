@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Result">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="79.0" prefHeight="443.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="pnumber" prefWidth="94.0" text="Person Number" />
+          <TableColumn fx:id="atime" prefWidth="97.0" text="Arrival Time" />
+            <TableColumn fx:id="btime" prefWidth="79.0" text="Burst Time" />
+            <TableColumn fx:id="ctime" minWidth="0.0" prefWidth="118.0" text="Completition Time" />
+            <TableColumn fx:id="ttime" prefWidth="127.0" text="Total Time" />
+            <TableColumn fx:id="wtime" prefWidth="150.0" text="Waiting time" />
+        </columns>
+      </TableView>
+      <Label fx:id="avgwait" layoutX="689.0" layoutY="114.0" prefHeight="131.0" prefWidth="245.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="totaltime" layoutX="684.0" layoutY="278.0" prefHeight="131.0" prefWidth="245.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
